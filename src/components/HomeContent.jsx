@@ -2,13 +2,13 @@
 
 const HomeContent = ({ title, body, color }) => {
   return (
-    <div>
+    <div className="w-full">
       <h2
         className={`
-            text-4xl max-w-[80%] font-semibold
+            text-4xl font-semibold mx-auto text-center
       ${
-        color === "green"
-          ? "text-text_green"
+        color === "purple"
+          ? "text-purple-500"
           : color === "cyan"
           ? "text-cyan-500"
           : color === "pink"
@@ -19,7 +19,7 @@ const HomeContent = ({ title, body, color }) => {
       >
         {title}
       </h2>
-      <p className="text-text_color text-4xl">{body}</p>
+      <p className="text-text_color text-2xl">{body}</p>
     </div>
   );
 };

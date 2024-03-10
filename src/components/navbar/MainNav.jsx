@@ -9,9 +9,7 @@ const MainNav = () => {
             <Link className="  hover:text-text_transparent transition duration-300">
               <li>Home</li>
             </Link>
-            <Link className="hover:text-text_transparent transition duration-300">
-              <li>About Me</li>
-            </Link>
+            
             <Link className="hover:text-text_transparent transition duration-300">
               <li>Skills</li>
             </Link>
