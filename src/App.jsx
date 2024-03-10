@@ -1,13 +1,16 @@
-
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import MainNav from "./components/navbar/MainNav";
+import Home from "./pages/Home";
 
 function App() {
-  
-
   return (
-    <div>
-      <h2 className="text-rose-500">Portfolio </h2>
-    </div>
-  )
+    <BrowserRouter>
+        <MainNav />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
