@@ -5,12 +5,15 @@ import { FaRegUser } from "react-icons/fa";
 import { LiaToolsSolid } from "react-icons/lia";
 import { BsSuitcaseLg } from "react-icons/bs";
 import { FaRegCircle } from "react-icons/fa";
+import { IoChevronForward } from "react-icons/io5";
+import Animation from "../components/Animation";
 
 
 
 const Home = () => {
   return (
     <Wrapper>
+        <Animation />
       <section className="min-h-screen w-full mt-16">
         <div className="h-full grid grid-cols-12">
           <div className="flex flex-col items-center justify-center gap-4 col-span-1 ">
@@ -20,7 +23,7 @@ const Home = () => {
           </div>
           <div className="col-span-11">
             <div className="max-w-[80%]">
-              <h1 className="text-7xl font-bold text-text_color">My Name Is Kelechi</h1>
+              <h1 className="text-7xl font-semibold text-text_color">My Name Is Kelechi</h1>
               <p className="text-2xl text-text_transparent mt-4">I am a fullstack web developer from Nigeria</p>
             </div>
 
@@ -30,7 +33,10 @@ const Home = () => {
                     <button>Send my an email</button>
                 </form>
 
-                <button className="border border-purple-400 py-2 px-6 text-text_color font-semibold rounded">View my projects</button>
+                <button className="border border-purple-400 py-2 px-6 text-text_color font-semibold rounded flex items-center gap-4 hover:hover:border-text_color transition duration-300">
+                    <p>Click to see my projects</p>
+                    <IoChevronForward className="mt-[2px]"/>
+                    </button>
             </div>
             
           </div>
