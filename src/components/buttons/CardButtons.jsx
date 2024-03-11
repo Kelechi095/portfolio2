@@ -2,8 +2,8 @@
 
 const CardButtons = ({ title }) => {
   return (
-    <div className="border border-text_transparent py-2 px-4 text-text_color font-semibold hover:border-text_transparent transition duration-300 text-sm text-center">
-      {title}
+    <div className="border border-text_transparent py-2 px-4 text-text_color font-semibold  hover:border-text_color md:file:transition duration-300 md:text-sm text-xs flex justify-center">
+      <p>{title}</p>
     </div>
   );
 };
