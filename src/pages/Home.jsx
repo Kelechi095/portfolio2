@@ -66,7 +66,7 @@ const Home = () => {
               
               <div className="w-full h-[0.007rem] bg-neutral-700"></div>
 
-              <button className="w-full border border-violet-500 py-3 px-6 text-text_color font-semibold rounded flex items-center justify-center gap-4 hover:hover:border-text_color transition duration-300 mt-2">
+              <button className="w-full border border-violet-500 py-3 px-6 text-text_color font-semibold rounded flex items-center justify-center gap-4 hover:hover:border-text_color transition duration-300 mt-2 animate-bounce">
                 <p>Click to see my projects</p>
                 <IoChevronForward className="mt-[2px]" />
               </button>
