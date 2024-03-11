@@ -8,12 +8,12 @@ const Home = () => {
   return (
     <Wrapper>
       <Animation />
-      <section className="min-h-[60vh] w-full mt-16">
+      <section className="md:min-h-[60vh] min-h-screen w-full mt-16">
         <div className="h-full grid grid-cols-12">
           <div className="flex flex-col items-center justify-center gap-4 col-span-1 ">
-            <div className=" h-full bg-gradient-to-t from-purple-400 w-1"></div>
-            <FaRegCircle className="text-purple-400" size={20} />
-            <div className=" h-full bg-gradient-to-b from-purple-400 w-1"></div>
+            <div className=" h-full bg-gradient-to-t from-violet-400 md:w-[3px] w-[2px] rounded"></div>
+            <FaRegCircle className="text-violet-400" size={20} />
+            <div className=" h-full bg-gradient-to-b from-purple-400 rounded md:w-[3px] w-[2px]"></div>
           </div>
           <div className="col-span-11">
             <div className="md:max-w-[70%]">
@@ -37,9 +37,9 @@ const Home = () => {
                 <input
                   type="text"
                   className="py-3 px-2 w-64 rounded-l-lg outline-purple-500"
-                  placeholder="Your email Address"
+                  placeholder="Email Address"
                 />
-                <button className="bg-purple-700 hover:bg-purple-600 transition duration-300 rounded-r-lg font-semibold text-text_color py-3 px-6">
+                <button className="bg-purple-500 hover:bg-purple-500 transition duration-300 rounded-r-lg font-semibold text-text_color py-3 px-6">
                   Send me an email
                 </button>
               </form>
@@ -57,9 +57,9 @@ const Home = () => {
                 <input
                   type="text"
                   className="py-3 px-2 w-full rounded outline-purple-500 mb-4"
-                  placeholder="Your email Address"
+                  placeholder="Email Address"
                 />
-                <button className="bg-purple-700 w-full hover:bg-purple-600 transition duration-300 rounded font-semibold text-text_color py-3 px-6">
+                <button className="bg-purple-500 w-full hover:bg-purple-500 transition duration-300 rounded font-semibold text-text_color py-3 px-6">
                   Send me an email
                 </button>
               </form>
@@ -75,12 +75,12 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="min-h-[60vh] w-full mt-6 md:mt-0">
+      <section className="md:min-h-[60vh] min-h-scren w-full mt-6 md:mt-0">
         <div className="h-full grid grid-cols-12">
           <div className="flex flex-col items-center justify-center gap-4 col-span-1 ">
-            <div className=" h-full bg-gradient-to-t from-purple-500 w-1"></div>
-            <FaRegCircle className="text-purple-500" size={20} />
-            <div className=" h-full bg-gradient-to-b from-purple-500 w-1"></div>
+            <div className=" h-full bg-gradient-to-t from-violet-400 md:w-[3px] w-[2px]"></div>
+            <FaRegCircle className="text-violet-400" size={20} />
+            <div className=" h-full bg-gradient-to-b from-violet-400 md:w-[3px] w-[2px]"></div>
           </div>
           <div className="col-span-11 w-full">
             <Card title="My Skills" />
