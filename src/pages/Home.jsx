@@ -8,12 +8,12 @@ const Home = () => {
   return (
     <Wrapper>
       <Animation />
-      <section className="md:min-h-[60vh] min-h-screen w-full mt-16">
+      <section className="md:min-h-[60vh] min-h-[80vh] w-full mt-16">
         <div className="h-full grid grid-cols-12">
           <div className="flex flex-col items-center justify-center gap-4 col-span-1 ">
             <div className=" h-full bg-gradient-to-t from-violet-400 md:w-[3px] w-[2px] rounded"></div>
             <FaRegCircle className="text-violet-400" size={20} />
-            <div className=" h-full bg-gradient-to-b from-purple-400 rounded md:w-[3px] w-[2px]"></div>
+            <div className=" h-full bg-gradient-to-b from-violet-400 rounded md:w-[3px] w-[2px]"></div>
           </div>
           <div className="col-span-11">
             <div className="md:max-w-[70%]">
@@ -36,16 +36,16 @@ const Home = () => {
               <form className="flex items-center">
                 <input
                   type="text"
-                  className="py-3 px-2 w-64 rounded-l-lg outline-purple-500"
+                  className="py-3 px-2 w-64 rounded-l-lg outline-violet-500"
                   placeholder="Email Address"
                 />
-                <button className="bg-purple-500 hover:bg-purple-500 transition duration-300 rounded-r-lg font-semibold text-text_color py-3 px-6">
+                <button className="bg-violet-600 hover:bg-violet-500 transition duration-300 rounded-r-lg font-semibold text-text_color py-3 px-6">
                   Send me an email
                 </button>
               </form>
               
 
-              <button className="border border-purple-400 py-3 px-6 text-text_color font-semibold rounded flex items-center gap-4 hover:hover:border-text_color transition duration-300">
+              <button className="border border-violet-400 py-3 px-6 text-text_color font-semibold rounded flex items-center gap-4 hover:hover:border-text_color transition duration-300">
                 <p>Click to see my projects</p>
                 <IoChevronForward className="mt-[2px]" />
               </button>
@@ -56,17 +56,17 @@ const Home = () => {
             <form className=" md:hidden w-full items-center">
                 <input
                   type="text"
-                  className="py-3 px-2 w-full rounded outline-purple-500 mb-4"
+                  className="py-3 px-2 w-full rounded outline-violet-500 mb-4"
                   placeholder="Email Address"
                 />
-                <button className="bg-purple-500 w-full hover:bg-purple-500 transition duration-300 rounded font-semibold text-text_color py-3 px-6">
+                <button className="bg-violet-600 w-full hover:bg-violet-500 transition duration-300 rounded font-semibold text-text_color py-3 px-6">
                   Send me an email
                 </button>
               </form>
               
               <div className="w-full h-[0.007rem] bg-neutral-700"></div>
 
-              <button className="w-full border border-purple-400 py-3 px-6 text-text_color font-semibold rounded flex items-center justify-center gap-4 hover:hover:border-text_color transition duration-300 mt-2">
+              <button className="w-full border border-violet-500 py-3 px-6 text-text_color font-semibold rounded flex items-center justify-center gap-4 hover:hover:border-text_color transition duration-300 mt-2">
                 <p>Click to see my projects</p>
                 <IoChevronForward className="mt-[2px]" />
               </button>
@@ -75,7 +75,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="md:min-h-[60vh] min-h-scren w-full mt-6 md:mt-0">
+      <section className="md:min-h-[60vh] min-h-[80vh] w-full mt-6 md:mt-0">
         <div className="h-full grid grid-cols-12">
           <div className="flex flex-col items-center justify-center gap-4 col-span-1 ">
             <div className=" h-full bg-gradient-to-t from-violet-400 md:w-[3px] w-[2px]"></div>
