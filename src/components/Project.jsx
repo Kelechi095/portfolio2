@@ -6,9 +6,9 @@ const Project = ({ title, tech, description1, description2, src }) => {
   return (
     <>
       <div className="my-2">
-        <h2 className="text-violet-400 font-semibold text-lg">
+        <h2 className="text-violet-400 font-semibold text-lg md:text-xl">
           {title}:{" "}
-          <span className="text-text_color text-base font-semibold">
+          <span className="text-text_color md:text-lg text-base font-semibold">
             {tech}
           </span>
         </h2>

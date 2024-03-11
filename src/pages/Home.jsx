@@ -19,7 +19,7 @@ const Home = () => {
             <FaRegCircle className="text-violet-400" size={20} />
             <div className=" h-full bg-gradient-to-b from-violet-400 rounded md:w-[3px] w-[2px]"></div>
           </div>
-          <div className="col-span-11">
+          <div className="col-span-11 pr-2">
             <div className="md:max-w-[70%]">
               <h1 className="hidden lg:block text-7xl font-semibold text-text_color">
                 Hi there, I am Kelechi
@@ -84,7 +84,7 @@ const Home = () => {
             <FaRegCircle className="text-violet-400" size={20} />
             <div className=" h-full bg-gradient-to-b from-violet-400 md:w-[3px] w-[2px]"></div>
           </div>
-          <div className="col-span-11 w-full">
+          <div className="col-span-11 w-full pr-2">
             <div className="flex items-center gap-2 mb-4">
               <h2 className="text-text_color font-semibold text-lg">SKILLS</h2>
               <HiMiniChevronDoubleDown className="text-white" />
@@ -101,7 +101,7 @@ const Home = () => {
             <FaRegCircle className="text-violet-400" size={20} />
             <div className=" h-full bg-gradient-to-b from-violet-400 md:w-[3px] w-[2px]"></div>
           </div>
-          <div className="col-span-11 w-full">
+          <div className="col-span-11 w-full pr-2">
             <div className="flex items-center gap-2 mb-8">
               <h2 className="text-text_color font-semibold text-lg">
                 PROJECTS

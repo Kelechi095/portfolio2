@@ -4,7 +4,7 @@ import CardButtons from "./buttons/CardButtons";
 const Card = () => {
   return (
     <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
-    <div className="w-full mt-4 bg-card3 p-6 rounded mb-4 border text-xl font-semibold border-zinc-700 shadow-sm text-text_transparent ">
+    <div className="w-full mt-4 bg-card3 p-4 rounded mb-4 border text-xl font-semibold border-zinc-700 shadow-sm text-text_transparent ">
         <div>
           <div className="flex items-center mx-auto">
             <div className="w-[40%] h-[1px] bg-gradient-to-r from-violet-400 mx-2"></div>
@@ -24,7 +24,7 @@ const Card = () => {
         </div>
         
     </div>
-    <div className="w-full mt-4 bg-card3  p-6 rounded mb-4 border text-xl font-semibold border-zinc-700 shadow-sm text-text_transparent ">
+    <div className="w-full mt-4 bg-card3  p-4 rounded mb-4 border text-xl font-semibold border-zinc-700 shadow-sm text-text_transparent ">
         <div>
           <div className="flex items-center mx-auto">
             <div className="w-[40%] h-[1px] bg-gradient-to-r from-violet-400 mx-2"></div>
