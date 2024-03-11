@@ -7,9 +7,9 @@ const Card = () => {
     <div className="w-full mt-4 bg-card3 p-6 rounded mb-4 border text-xl font-semibold border-zinc-700 shadow-sm text-text_transparent ">
         <div>
           <div className="flex items-center mx-auto">
-            <div className="w-[40%] h-[1px] bg-gradient-to-r from-purple-400 mx-2"></div>
-            <h2 className="text-lg text-purple-400">Technologies</h2>
-            <div className="w-[40%] h-[1px] bg-gradient-to-l from-purple-400 mx-2"></div>
+            <div className="w-[40%] h-[1px] bg-gradient-to-r from-violet-400 mx-2"></div>
+            <h2 className="text-lg text-violet-400">Technologies</h2>
+            <div className="w-[40%] h-[1px] bg-gradient-to-l from-violet-400 mx-2"></div>
           </div>
           <div className="grid grid-cols-3 gap-2 mt-2">
             <CardButtons title="JavaScript" />
@@ -27,9 +27,9 @@ const Card = () => {
     <div className="w-full mt-4 bg-card3  p-6 rounded mb-4 border text-xl font-semibold border-zinc-700 shadow-sm text-text_transparent ">
         <div>
           <div className="flex items-center mx-auto">
-            <div className="w-[40%] h-[1px] bg-gradient-to-r from-purple-400 mx-2"></div>
-            <h2 className="text-lg text-purple-400">Tools</h2>
-            <div className="w-[40%] h-[1px] bg-gradient-to-l from-purple-400 mx-2"></div>
+            <div className="w-[40%] h-[1px] bg-gradient-to-r from-violet-400 mx-2"></div>
+            <h2 className="text-lg text-violet-400">Tools</h2>
+            <div className="w-[40%] h-[1px] bg-gradient-to-l from-violet-400 mx-2"></div>
           </div>
           <div className="grid grid-cols-3 gap-2 mt-2">
           <CardButtons title="ReactQuery" />
