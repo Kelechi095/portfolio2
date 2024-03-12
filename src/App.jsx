@@ -1,15 +1,15 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import MainNav from "./components/navbar/MainNav";
+import Navbar from "./components/navbar/Navbar";
+import { useRef } from "react";
 import Home from "./pages/Home";
 
 function App() {
+  const skillsRef = useRef()
+  const projectsRef = useRef()
   return (
-    <BrowserRouter>
-        <MainNav />
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </BrowserRouter>
+    <>
+      <Navbar skillsRef={skillsRef} projectsRef={projectsRef} />
+      <Home skillsRef={skillsRef} projectsRef={projectsRef}/>
+    </>
   );
 }
 

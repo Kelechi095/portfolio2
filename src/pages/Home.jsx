@@ -1,34 +1,36 @@
+/* eslint-disable react/prop-types */
 import Card from "../components/Card";
 import Wrapper from "../components/Wrapper";
-import { FaRegCircle } from "react-icons/fa";
+import { FaGithub, FaRegCircle } from "react-icons/fa";
 import { HiMiniChevronDoubleDown } from "react-icons/hi2";
-import { IoChevronForward } from "react-icons/io5";
 
 import Animation from "../components/Animation";
 import Booktekka from "/images/booktekka.png";
 import Project from "../components/Project";
 
-const Home = () => {
+const Home = ({skillsRef, projectsRef}) => {
+
   return (
     <Wrapper>
       <Animation />
-      <section className="md:min-h-[60vh] min-h-[80vh] w-full mt-16">
+
+      <section className="min-h-[60vh] w-full" id="home">
         <div className="h-full grid grid-cols-12">
-          <div className="flex flex-col items-center justify-center gap-4 col-span-1 ">
+          <div className="flex flex-col items-center justify-center gap-4 col-span-1 mt-24 ">
             <div className=" h-full bg-gradient-to-t from-violet-400 md:w-[3px] w-[2px] rounded"></div>
-            <FaRegCircle className="text-violet-400" size={20} />
+            <FaRegCircle className="text-violet-400" size={20}/>
             <div className=" h-full bg-gradient-to-b from-violet-400 rounded md:w-[3px] w-[2px]"></div>
           </div>
-          <div className="col-span-11 pr-2">
-            <div className="md:max-w-[70%]">
+          <div className="col-span-11 pr-2" id="#home">
+            <div className="md:max-w-[70%]  mt-24">
               <h1 className="hidden lg:block text-7xl font-semibold text-text_color">
                 Hi there, I am Kelechi
               </h1>
-              <div className="text-5xl lg:hidden font-semibold text-text_color">
+              <div className="text-5xl lg:hidden font-semibold text-text_color mt-24">
                 <p>Hi there,</p>
                 <p>I am Kelechi</p>
               </div>
-              <p className="text-sm md:text-lg text-text_transparent mt-4">
+              <p className="text-sm md:text-xl text-text_transparent mt-4">
                 I am a Fullstack Web Developer. I have a passion for creating
                 beautiful, efficient, accessible, responsive and user-centric
                 web projects. My blend of front-end and back-end expertise makes
@@ -48,10 +50,13 @@ const Home = () => {
                 </button>
               </form>
 
-              <button className="border border-violet-400 py-3 px-6 text-text_color font-semibold rounded flex items-center gap-4 hover:hover:border-text_color transition duration-300">
-                <p>Check out my Github</p>
-                <IoChevronForward className="mt-[2px]" />
-              </button>
+              <a
+                className="border border-violet-400 py-3 px-6 text-text_color font-semibold rounded flex items-center gap-4 hover:hover:border-text_color transition duration-300"
+                href="https://github.com/Kelechi095"
+              >
+                <FaGithub className="mt-[2px]" size={30} />
+                <p className="text-lg">Check out my Github</p>
+              </a>
             </div>
 
             <div className="flex flex-col md:hidden items-center gap-4 mt-8">
@@ -68,49 +73,59 @@ const Home = () => {
 
               <div className="w-full h-[0.007rem] bg-neutral-700"></div>
 
-              <button className="w-full border border-violet-500 py-3 px-6 text-text_color font-semibold rounded flex items-center justify-center gap-4 hover:hover:border-text_color transition duration-300 mt-2 animate-bounce">
-                <IoChevronForward className="mt-[2px]" />
+              <a
+                className="w-full border border-violet-500 py-3 px-6 text-text_color font-semibold rounded flex items-center justify-center gap-4 hover:hover:border-text_color transition duration-300 mt-2"
+                href="https://github.com/Kelechi095"
+              >
+                <FaGithub className="mt-[2px]" size={25} />
                 <p>Check out my Github</p>
-              </button>
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="md:min-h-[60vh] min-h-[80vh] w-full mt-6 md:mt-0">
-        <div className="h-full grid grid-cols-12">
-          <div className="flex flex-col items-center justify-center gap-4 col-span-1 ">
-            <div className=" h-full bg-gradient-to-t from-violet-400 md:w-[3px] w-[2px]"></div>
-            <FaRegCircle className="text-violet-400" size={20} />
-            <div className=" h-full bg-gradient-to-b from-violet-400 md:w-[3px] w-[2px]"></div>
-          </div>
-          <div className="col-span-11 w-full pr-2">
-            <div className="flex items-center gap-2 mb-4">
-              <h2 className="text-text_color font-semibold text-lg">SKILLS</h2>
-              <HiMiniChevronDoubleDown className="text-white" />
+      {/* SKILLS SECTION */}
+
+      <section className="min-h-[60vh] w-full" ref={skillsRef}>
+          <div className="grid grid-cols-12">
+            <div className="flex flex-col items-center justify-center gap-4 col-span-1 mt-36">
+              <div className=" h-full bg-gradient-to-t from-violet-400 md:w-[3px] w-[2px]"></div>
+              <FaRegCircle className="text-violet-400" size={20} />
+              <div className=" h-full bg-gradient-to-b from-violet-400 md:w-[3px] w-[2px]"></div>
             </div>
-            <Card title="My Skills" />
+            <div className="col-span-11 w-full pr-2" >
+              <div className="flex items-center gap-2 mb-4  mt-36">
+                <h2 className="text-text_color font-semibold text-lg">
+                  SKILLS
+                </h2>
+                <HiMiniChevronDoubleDown className="text-white" />
+              </div>
+              <Card title="My Skills" />
+            </div>
           </div>
-        </div>
       </section>
 
-      <section className="md:min-h-[60vh] min-h-[80vh] w-full mt-6 md:mt-0">
+      {/* PROJECTS SECTION */}
+
+      <section className=" min-h-[60vh] w-full mt-6 md:mt-0" ref={projectsRef}>
         <div className="h-full grid grid-cols-12">
-          <div className="flex flex-col items-center justify-center gap-4 col-span-1 ">
+          <div className="flex flex-col items-center justify-center gap-4 col-span-1 mt-36">
             <div className=" h-full bg-gradient-to-t from-violet-400 md:w-[3px] w-[2px]"></div>
             <FaRegCircle className="text-violet-400" size={20} />
             <div className=" h-full bg-gradient-to-b from-violet-400 md:w-[3px] w-[2px]"></div>
           </div>
           <div className="col-span-11 w-full pr-2">
-            <div className="flex items-center gap-2 mb-8">
+            <div className="flex items-center gap-2 mb-8  mt-32">
               <h2 className="text-text_color font-semibold text-lg">
                 PROJECTS
               </h2>
               <HiMiniChevronDoubleDown className="text-white" />
             </div>
+
             <Project
               title="BookTekka"
-              tech="Next.js, TypeScript, Tailwind CSS, MongoDB, Prisma, Zustand"
+              tech="Next.js, TypeScript, Tailwind CSS, MongoDB, Prisma, Zustand, React hook form"
               description1="Booktekka is a web application I created to allow book readers to
             recommend books to other readers, keep track of the books in their
             library and update the reading progress of the books they are currently
@@ -118,6 +133,8 @@ const Home = () => {
               description2="I made the website interactive as users can like and unlike recommended
             books, view profile of other users and add reviews to recommended books"
               src={Booktekka}
+              siteLink="https://booktekka.vercel.app"
+              gitLink="https://github.com/Kelechi095/BookTekka-Nextjs"
             />
           </div>
         </div>

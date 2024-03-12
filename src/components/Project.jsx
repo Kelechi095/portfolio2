@@ -2,7 +2,9 @@
 import { FaGithub } from "react-icons/fa";
 import { GoLinkExternal } from "react-icons/go";
 
-const Project = ({ title, tech, description1, description2, src }) => {
+const Project = ({ title, tech, description1, description2, src, siteLink, gitLink }) => {
+
+    
   return (
     <>
       <div className="my-2">
@@ -13,23 +15,23 @@ const Project = ({ title, tech, description1, description2, src }) => {
           </span>
         </h2>
       </div>
-      <img src={src} alt="Booktekka image" className="rounded" />
-      <p className="text-sm md:text-base text-text_transparent mt-2">
+      <img src={src} alt="Booktekka image" className="rounded w-full md:max-w-[70%]" />
+      <p className="text-sm md:text-lg text-text_transparent mt-2 max-w-[70%]">
         {description1}
       </p>
-      <p className="text-sm md:text-base text-text_transparent mt-2">
+      <p className="text-sm md:text-lg text-text_transparent mt-2 max-w-[70%]">
         {description2}
       </p>
 
       <div className="mt-2 flex gap-3">
-        <button className="border border-violet-400 p-2 text-text_color font-semibold rounded flex items-center gap-2 hover:hover:border-text_color transition duration-300">
+        <a className="border border-violet-400 p-2 text-text_color font-semibold rounded flex items-center gap-2 hover:hover:border-text_color transition duration-300" href={siteLink}>
           <GoLinkExternal className="mt-[2px]" />
           <p className="text-sm md:text-base">Live Site</p>
-        </button>
-        <button className="border border-violet-400 p-2 text-text_color font-semibold rounded flex items-center gap-2 hover:hover:border-text_color transition duration-300">
+        </a>
+        <a className="border border-violet-400 p-2 text-text_color font-semibold rounded flex items-center gap-2 hover:hover:border-text_color transition duration-300" href={gitLink}>
           <FaGithub className="mt-[2px]" />
           <p className="text-sm md:text-base">Github Code</p>
-        </button>
+        </a>
       </div>
     </>
   );

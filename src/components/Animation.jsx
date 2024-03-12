@@ -4,7 +4,7 @@ const Animation = () => {
         <div className="relative mx-auto h-10 w-10 animate-bounce">
           <div className="mx-auto h-16 w-16 animate-pulse rounded-full bg-violet-400"></div>
           <span className="absolute flex h-5 w-5 animate-spin">
-            <span className="h-4 w-4 rounded-full bg-violet-600"> </span>
+            <span className="h-4 w-4 rounded-full bg-violet-500"> </span>
           </span>
         </div>
       </div>
