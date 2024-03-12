@@ -16,10 +16,10 @@ const Project = ({ title, tech, description1, description2, src, siteLink, gitLi
         </h2>
       </div>
       <img src={src} alt="Booktekka image" className="rounded w-full md:max-w-[70%]" />
-      <p className="text-sm md:text-lg text-text_transparent mt-2 max-w-[70%]">
+      <p className="text-sm md:text-lg text-text_transparent mt-2 md:max-w-[70%]">
         {description1}
       </p>
-      <p className="text-sm md:text-lg text-text_transparent mt-2 max-w-[70%]">
+      <p className="text-sm md:text-lg text-text_transparent mt-2 md:max-w-[70%]">
         {description2}
       </p>
 
