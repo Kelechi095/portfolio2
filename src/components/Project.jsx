@@ -8,9 +8,9 @@ const Project = ({ title, tech, description1, description2, src, siteLink, gitLi
   return (
     <>
       <div className="my-2">
-        <h2 className="text-text_cyan font-semibold text-lg md:text-xl">
+        <h2 className="text-text_color font-semibold text-lg md:text-xl">
           {title}:{" "}
-          <span className="text-text_color md:text-lg text-base font-semibold">
+          <span className="text-text_transparent md:text-lg text-base font-normal ">
             {tech}
           </span>
         </h2>
@@ -19,7 +19,7 @@ const Project = ({ title, tech, description1, description2, src, siteLink, gitLi
       <p className="text-sm md:text-lg text-text_transparent mt-2 md:max-w-[70%]">
         {description1}
       </p>
-      <p className="text-sm md:text-lg text-text_transparent mt-2 md:max-w-[70%]">
+      <p className="text-sm md:text-base text-text_transparent mt-2 md:max-w-[70%]">
         {description2}
       </p>
 

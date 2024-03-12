@@ -8,7 +8,7 @@ const Card = () => {
         <div>
           <div className="flex items-center mx-auto">
             <div className="w-[40%] h-[1px] bg-gradient-to-r from-text_green mx-2"></div>
-            <h2 className="text-lg text-text_green">Technologies</h2>
+            <h2 className="text-lg text-text_color">Technologies</h2>
             <div className="w-[40%] h-[1px] bg-gradient-to-l from-text_green mx-2"></div>
           </div>
           <div className="grid grid-cols-3 gap-2 mt-2">
@@ -28,7 +28,7 @@ const Card = () => {
         <div>
           <div className="flex items-center mx-auto">
             <div className="w-[40%] h-[1px] bg-gradient-to-r from-text_green mx-2"></div>
-            <h2 className="text-lg text-text_green">Tools</h2>
+            <h2 className="text-lg text-text_color">Tools</h2>
             <div className="w-[40%] h-[1px] bg-gradient-to-l from-text_green mx-2"></div>
           </div>
           <div className="grid grid-cols-3 gap-2 mt-2">
