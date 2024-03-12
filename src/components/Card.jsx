@@ -6,7 +6,7 @@ const Card = () => {
     <section className="">
       <div className="w-full mt-4 bg-card3 p-4 rounded mb-4 border text-xl font-semibold border-zinc-700 shadow-sm text-text_transparent ">
         <div>
-          <div className="grid grid-cols-4 gap-2 mt-2">
+          <div className="grid grid-cols-3 md:grid-cols-4 gap-2 mt-2">
             <CardButtons title="JavaScript" />
             <CardButtons title="TypeScript" />
             <CardButtons title="Node.js" />
