@@ -8,7 +8,7 @@ const Project = ({ title, tech, description1, description2, src, siteLink, gitLi
   return (
     <>
       <div className="my-2">
-        <h2 className="text-violet-400 font-semibold text-lg md:text-xl">
+        <h2 className="text-text_cyan font-semibold text-lg md:text-xl">
           {title}:{" "}
           <span className="text-text_color md:text-lg text-base font-semibold">
             {tech}
@@ -24,11 +24,11 @@ const Project = ({ title, tech, description1, description2, src, siteLink, gitLi
       </p>
 
       <div className="mt-2 flex gap-3">
-        <a className="border border-violet-400 p-2 text-text_color font-semibold rounded flex items-center gap-2 hover:hover:border-text_color transition duration-300" href={siteLink}>
+        <a className="border border-text_cyan p-2 text-text_color font-semibold rounded flex items-center gap-2 hover:hover:border-text_color transition duration-300" href={siteLink}>
           <GoLinkExternal className="mt-[2px]" />
           <p className="text-sm md:text-base">Live Site</p>
         </a>
-        <a className="border border-violet-400 p-2 text-text_color font-semibold rounded flex items-center gap-2 hover:hover:border-text_color transition duration-300" href={gitLink}>
+        <a className="border border-text_cyan p-2 text-text_color font-semibold rounded flex items-center gap-2 hover:hover:border-text_color transition duration-300" href={gitLink}>
           <FaGithub className="mt-[2px]" />
           <p className="text-sm md:text-base">Github Code</p>
         </a>

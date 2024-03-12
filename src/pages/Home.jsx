@@ -90,9 +90,9 @@ const Home = ({skillsRef, projectsRef}) => {
       <section className="min-h-[60vh] w-full" ref={skillsRef}>
           <div className="grid grid-cols-12">
             <div className="flex flex-col items-center justify-center gap-4 col-span-1 mt-36">
-              <div className=" h-full bg-gradient-to-t from-violet-400 md:w-[3px] w-[2px]"></div>
-              <FaRegCircle className="text-violet-400" size={20} />
-              <div className=" h-full bg-gradient-to-b from-violet-400 md:w-[3px] w-[2px]"></div>
+              <div className=" h-full bg-gradient-to-t from-text_green md:w-[3px] w-[2px]"></div>
+              <FaRegCircle className="text-text_green" size={20} />
+              <div className=" h-full bg-gradient-to-b from-text_green md:w-[3px] w-[2px]"></div>
             </div>
             <div className="col-span-11 w-full pr-2" >
               <div className="flex items-center gap-2 mb-4  mt-36">
@@ -111,9 +111,9 @@ const Home = ({skillsRef, projectsRef}) => {
       <section className=" min-h-[60vh] w-full mt-6 md:mt-0" ref={projectsRef}>
         <div className="h-full grid grid-cols-12">
           <div className="flex flex-col items-center justify-center gap-4 col-span-1 mt-36">
-            <div className=" h-full bg-gradient-to-t from-violet-400 md:w-[3px] w-[2px]"></div>
-            <FaRegCircle className="text-violet-400" size={20} />
-            <div className=" h-full bg-gradient-to-b from-violet-400 md:w-[3px] w-[2px]"></div>
+            <div className=" h-full bg-gradient-to-t from-text_cyan md:w-[3px] w-[2px]"></div>
+            <FaRegCircle className="text-text_cyan" size={20} />
+            <div className=" h-full bg-gradient-to-b from-text_cyan md:w-[3px] w-[2px]"></div>
           </div>
           <div className="col-span-11 w-full pr-2">
             <div className="flex items-center gap-2 mb-8  mt-32">
