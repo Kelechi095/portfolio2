@@ -20,21 +20,21 @@ const Navbar = ({ skillsRef, projectsRef }) => {
         </h1>
         <ul className="flex items-center gap-8 text-text_color">
           <li
-            className="text-sm md:text-lg hover:text-text_transparent transition duration-300 cursor-pointer focus:outline-none"
+            className="text-sm md:text-lg hover:text-text_transparent transition duration-300 cursor-pointer  noSelect "
             onClick={scrollToTop}
           >
             Home
           </li>
 
           <li
-            className="text-sm md:text-lg  hover:text-text_transparent transition duration-300 cursor-pointer focus:outline-none"
+            className="text-sm md:text-lg  hover:text-text_transparent transition duration-300 cursor-pointer noSelect"
             onClick={() => scrollIntoView(skillsRef)}
           >
             Skills
           </li>
 
           <li
-            className="text-sm md:text-lg hover:text-text_transparent transition duration-300 cursor-pointer"
+            className="text-sm md:text-lg hover:text-text_transparent transition duration-300 cursor-pointer noSelect"
             onClick={() => scrollIntoView(projectsRef)}
           >
             Projects

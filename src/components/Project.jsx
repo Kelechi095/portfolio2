@@ -34,14 +34,14 @@ const Project = ({
         </p>
         <div className="mt-2 flex gap-3">
           <a
-            className="border border-violet-700 p-2 text-text_color font-semibold rounded flex items-center gap-2 hover:hover:border-text_color transition duration-300"
+            className="border border-violet-600 p-2 text-text_color font-semibold rounded flex items-center gap-2 hover:hover:border-text_color transition duration-300"
             href={siteLink}
           >
             <GoLinkExternal className="mt-[2px]" />
             <p className="text-sm md:text-base">Live Site</p>
           </a>
           <a
-            className="border border-violet-700 p-2 text-text_color font-semibold rounded flex items-center gap-2 hover:hover:border-text_color transition duration-300"
+            className="border border-violet-600 p-2 text-text_color font-semibold rounded flex items-center gap-2 hover:hover:border-text_color transition duration-300"
             href={gitLink}
           >
             <FaGithub className="mt-[2px]" />

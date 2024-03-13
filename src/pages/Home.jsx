@@ -23,10 +23,12 @@ const Home = ({ skillsRef, projectsRef }) => {
               <p>I am Kelechi</p>
             </div>
             <p className="text-base md:text-xl text-text_transparent mt-4">
-              I am a Fullstack Web Developer. I have a passion for creating
+              I am a Fullstack Web Developer from Nigeria. I have a passion for creating
               beautiful, efficient, accessible, responsive and user-centric web
               projects. My blend of front-end and back-end expertise makes me a
               valuable addition to any team.
+              <br />
+              
             </p>
           </div>
 
@@ -34,16 +36,16 @@ const Home = ({ skillsRef, projectsRef }) => {
             <form className="flex items-center">
               <input
                 type="text"
-                className="py-3 px-2 w-64 rounded-l-lg outline-violet-700"
-                placeholder="Email Address"
+                className="py-3 px-2 w-64 rounded-l-lg outline-violet-600"
+                placeholder="Email subject"
               />
-              <button className="bg-violet-700 hover:bg-violet-600 transition duration-300 rounded-r-lg font-semibold text-text_color py-3 px-6">
+              <button className="bg-violet-600 hover:bg-violet-500 transition duration-300 rounded-r-lg font-semibold text-text_color py-3 px-6">
                 Send me an email
               </button>
             </form>
 
             <a
-              className="border border-violet-700 py-3 px-6 text-text_color font-semibold rounded flex items-center gap-4 hover:hover:border-text_color transition duration-300"
+              className="border border-violet-600 py-3 px-6 text-text_color font-semibold rounded flex items-center gap-4 hover:hover:border-text_color transition duration-300"
               href="https://github.com/Kelechi095"
             >
               <FaGithub className="mt-[2px]" size={30} />
@@ -55,10 +57,10 @@ const Home = ({ skillsRef, projectsRef }) => {
             <form className=" md:hidden w-full items-center">
               <input
                 type="text"
-                className="py-3 px-2 w-full rounded outline-violet-700 mb-4"
+                className="py-3 px-2 w-full rounded outline-violet-600 mb-4"
                 placeholder="Email Address"
               />
-              <button className="bg-violet-700 w-full hover:bg-violet-600 transition duration-300 rounded font-semibold text-text_color py-3 px-6">
+              <button className="bg-violet-600 w-full hover:bg-violet-500 transition duration-300 rounded font-semibold text-text_color py-3 px-6">
                 Send me an email
               </button>
             </form>
@@ -66,7 +68,7 @@ const Home = ({ skillsRef, projectsRef }) => {
             <div className="w-full h-[0.007rem] bg-neutral-700"></div>
 
             <a
-              className="w-full border border-violet-700 py-3 px-6 text-text_color font-semibold rounded flex items-center justify-center gap-4 hover:hover:border-text_color transition duration-300 mt-2"
+              className="w-full border border-violet-600 py-3 px-6 text-text_color font-semibold rounded flex items-center justify-center gap-4 hover:hover:border-text_color transition duration-300 mt-2"
               href="https://github.com/Kelechi095"
             >
               <FaGithub className="mt-[2px]" size={25} />
@@ -78,13 +80,12 @@ const Home = ({ skillsRef, projectsRef }) => {
 
       {/* SKILLS SECTION */}
 
-      <section className=" w-full min-h-[70%] flex items-center" ref={skillsRef}>
+      <section className=" w-full min-h-[60%] flex items-center" ref={skillsRef}>
         <div className="w-full">
           <div className="flex items-center gap-2 mb-4 mt-44 md:justify-center">
             <h2 className="text-text_color font-semibold text-xl md:text-4xl font-mono">
               Skills
             </h2>
-            {/* <HiMiniChevronDoubleDown className="text-white" size={30}/> */}
           </div>
           <Card title="My Skills" />
         </div>
@@ -92,19 +93,19 @@ const Home = ({ skillsRef, projectsRef }) => {
 
       {/* PROJECTS SECTION */}
 
-      <section className=" w-full min-h-[70vh] flex items-center" ref={projectsRef}>
+      <section className=" w-full min-h-[60vh] flex items-center" ref={projectsRef}>
         <div>
           <div className="flex items-center gap-2 mb-4 mt-44 md:justify-center">
             <h2 className="text-text_color font-semibold text-xl md:text-4xl font-mono">
               Projects
             </h2>
-            {/* <HiMiniChevronDoubleDown className="text-white" size={30}/> */}
+
           </div>
           <div className="flex md:justify-center">
             <p className="text-base md:text-xl text-text_transparent md:max-w-[80%] md:text-center mb-8">
               I have gained experience creating all sorts of websites; from
               single page websites to fullstack applications. Check out some of
-              my projects below to see what I have been to.
+              my projects below to see what I have been to up to. 
             </p>
           </div>
 
@@ -116,7 +117,7 @@ const Home = ({ skillsRef, projectsRef }) => {
             library and update the reading progress of the books they are currently
             reading."
             description2="I made the website interactive as users can like and unlike recommended
-            books, view profile of other users and add reviews to recommended books"
+            books, view profile of other users and add reviews to recommended books. The website includes features such as authentication, an admin dashboard, server side pagination, search feature with debounce, sort and filter feature, image upload and more."
             src={Booktekka}
             siteLink="https://booktekka.vercel.app"
             gitLink="https://github.com/Kelechi095/BookTekka-Nextjs"
