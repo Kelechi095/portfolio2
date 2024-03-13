@@ -25,8 +25,8 @@ const Home = ({ skillsRef, projectsRef }) => {
               Hi there, I am Kelechi
             </h1>
             <div className="text-5xl lg:hidden font-semibold text-text_color mt-24">
-              <p>Hi there,</p>
-              <p>I am Kelechi</p>
+              <p className="noSelect">Hi there,</p>
+              <p className="noSelect">I am Kelechi</p>
             </div>
             <p className="text-base md:text-xl text-text_transparent mt-4">
               I am a Fullstack Web Developer from Nigeria. I have a passion for
@@ -57,7 +57,7 @@ const Home = ({ skillsRef, projectsRef }) => {
             </form>
 
             <a
-              className="border border-violet-600 py-3 px-6 text-text_color font-semibold rounded flex items-center gap-4 hover:hover:border-text_color transition duration-300"
+              className="border border-violet-600 py-2 px-6 text-text_color font-semibold rounded flex items-center gap-2 hover:hover:border-text_color transition duration-300"
               href="https://github.com/Kelechi095"
             >
               <FaGithub className="mt-[2px]" size={30} />
@@ -86,7 +86,7 @@ const Home = ({ skillsRef, projectsRef }) => {
             <div className="w-full h-[0.007rem] bg-neutral-700"></div>
 
             <a
-              className="w-full border border-violet-600 py-3 px-6 text-text_color font-semibold rounded flex items-center justify-center gap-4 hover:hover:border-text_color transition duration-300 mt-2"
+              className="w-full border border-violet-600 py-3 px-6 text-text_color font-semibold rounded flex items-center justify-center gap-2 hover:hover:border-text_color transition duration-300 mt-2"
               href="https://github.com/Kelechi095"
             >
               <FaGithub className="mt-[2px]" size={25} />
@@ -104,7 +104,7 @@ const Home = ({ skillsRef, projectsRef }) => {
       >
         <div className="w-full">
           <div className="flex items-center gap-2 mb-4 mt-44 md:justify-center">
-            <h2 className="text-text_color font-semibold text-xl md:text-4xl font-mono">
+            <h2 className="text-text_color font-semibold text-xl md:text-4xl font-mono noSelect">
               Skills
             </h2>
           </div>
@@ -120,7 +120,7 @@ const Home = ({ skillsRef, projectsRef }) => {
       >
         <div>
           <div className="flex items-center gap-2 mb-4 mt-44 md:justify-center">
-            <h2 className="text-text_color font-semibold text-xl md:text-4xl font-mono">
+            <h2 className="text-text_color font-semibold text-xl md:text-4xl font-mono noSelect">
               Projects
             </h2>
           </div>
