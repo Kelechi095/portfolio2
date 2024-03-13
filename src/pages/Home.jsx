@@ -45,7 +45,7 @@ const Home = ({skillsRef, projectsRef}) => {
                   className="py-3 px-2 w-64 rounded-l-lg outline-violet-500"
                   placeholder="Email Address"
                 />
-                <button className="bg-violet-600 hover:bg-violet-500 transition duration-300 rounded-r-lg font-semibold text-text_color py-3 px-6">
+                <button className="bg-violet-700 hover:bg-violet-600 transition duration-300 rounded-r-lg font-semibold text-text_color py-3 px-6">
                   Send me an email
                 </button>
               </form>
@@ -66,7 +66,7 @@ const Home = ({skillsRef, projectsRef}) => {
                   className="py-3 px-2 w-full rounded outline-violet-500 mb-4"
                   placeholder="Email Address"
                 />
-                <button className="bg-violet-600 w-full hover:bg-violet-500 transition duration-300 rounded font-semibold text-text_color py-3 px-6">
+                <button className="bg-violet-700 w-full hover:bg-violet-600 transition duration-300 rounded font-semibold text-text_color py-3 px-6">
                   Send me an email
                 </button>
               </form>

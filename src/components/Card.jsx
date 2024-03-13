@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import CardButtons from "./buttons/CardButtons";
 import { FaHtml5 } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
@@ -16,13 +17,12 @@ import { SiTailwindcss } from "react-icons/si";
 import { FaGitAlt } from "react-icons/fa";
 import { FaNpm } from "react-icons/fa";
 
-/* eslint-disable react/prop-types */
 const Card = () => {
   return (
     <section className="">
       <div className="w-full mt-4 bg-card3 p-4 rounded mb-4 border text-xl font-semibold border-zinc-700 shadow-sm text-text_transparent ">
         <div>
-          <div className="grid grid-cols-3 md:grid-cols-4 gap-2 mt-2">
+          <div className="grid grid-cols-3 md:grid-cols-4 gap-2 md:gap-3 mt-2">
             <CardButtons title="HTML5" icon={FaHtml5}/>
             <CardButtons title="CSS3" icon={IoLogoCss3}/>
             <CardButtons title="JavaScript" icon={IoLogoJavascript}/>
