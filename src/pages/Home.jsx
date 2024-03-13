@@ -12,7 +12,7 @@ const Home = ({ skillsRef, projectsRef }) => {
   const [subject1, setSubject1] = useState("");
   const [subject2, setSubject2] = useState("");
   const email = "awomskelechi@gmail.com";
-  const body = null;
+  const body = "";
 
   return (
     <Wrapper>
@@ -43,7 +43,7 @@ const Home = ({ skillsRef, projectsRef }) => {
                 type="text"
                 value={subject1}
                 onChange={(e) => setSubject1(e.target.value)}
-                className="py-3 px-2 w-64 rounded-l-lg outline-violet-600"
+                className="py-3 px-2 lg:w-64 md:w-[50%] rounded-l-lg outline-violet-600"
                 placeholder="Email subject"
               />
               <a
@@ -54,9 +54,6 @@ const Home = ({ skillsRef, projectsRef }) => {
               >
                 Send me an email
               </a>
-              {/* <button className="bg-violet-600 hover:bg-violet-500 transition duration-300 rounded-r-lg font-semibold text-text_color py-3 px-6">
-                Send me an email
-              </button> */}
             </form>
 
             <a
@@ -80,7 +77,7 @@ const Home = ({ skillsRef, projectsRef }) => {
                 href={`mailto:${email}?subject=${
                   encodeURIComponent(subject2) || ""
                 }&body=${encodeURIComponent(body) || ""}`}
-                className="bg-violet-600 hover:bg-violet-500 transition duration-300 rounded-r-lg font-semibold text-text_color py-3 px-6"
+                className="bg-violet-600 hover:bg-violet-500 transition duration-300 rounded font-semibold text-text_color py-3 px-6 w-full block text-center"
               >
                 Send me an email
               </a>
