@@ -20,16 +20,16 @@ const Project = ({
         className="rounded w-full md:max-w-[70%] mx-auto opacity-90"
       />
       <div className="md:max-w-[70%] mx-auto mt-4">
-        <h2 className="text-text_color font-semibold text-base md:text-2xl font-mono">
-          {title}:{" "}
+        <h2 className="text-text_color font-semibold text-base md:text-2xl">
+          {title} - {" "}
           <span className="text-text_transparent md:text-xl text-base ">
             {tech}
           </span>
         </h2>
-        <p className="text-base md:text-lg text-text_color mt-2 md:max-w-[70%]">
+        <p className="text-base md:text-lg text-text_color mt-2">
           {description1}
         </p>
-        <p className="text-base md:text-lg text-text_color mt-2 md:max-w-[70%]">
+        <p className="text-base md:text-lg text-text_color mt-2">
           {description2}
         </p>
         <div className="mt-2 flex gap-3">

@@ -8,7 +8,7 @@ const Navbar = ({ skillsRef, projectsRef }) => {
 
   const scrollIntoView = (ref) => {
     if (ref.current) {
-      ref.current.scrollIntoView({ behavior: "smooth" });
+      ref.current.scrollIntoView({ behavior: "smooth", top: -2 });
     }
   };
 
