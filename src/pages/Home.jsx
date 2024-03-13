@@ -1,13 +1,19 @@
 /* eslint-disable react/prop-types */
 import Card from "../components/Card";
 import Wrapper from "../components/Wrapper";
-import { FaGithub} from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 import Animation from "../components/Animation";
 import Booktekka from "/images/booktekka.png";
 import Project from "../components/Project";
+import { useState } from "react";
 
 const Home = ({ skillsRef, projectsRef }) => {
+  const [subject1, setSubject1] = useState("");
+  const [subject2, setSubject2] = useState("");
+  const email = "awomskelechi@gmail.com";
+  const body = null;
+
   return (
     <Wrapper>
       <Animation />
@@ -23,12 +29,11 @@ const Home = ({ skillsRef, projectsRef }) => {
               <p>I am Kelechi</p>
             </div>
             <p className="text-base md:text-xl text-text_transparent mt-4">
-              I am a Fullstack Web Developer from Nigeria. I have a passion for creating
-              beautiful, efficient, accessible, responsive and user-centric web
-              projects. My blend of front-end and back-end expertise makes me a
-              valuable addition to any team.
+              I am a Fullstack Web Developer from Nigeria. I have a passion for
+              creating beautiful, efficient, accessible, responsive and
+              user-centric web projects. My blend of front-end and back-end
+              expertise makes me a valuable addition to any team.
               <br />
-              
             </p>
           </div>
 
@@ -36,12 +41,22 @@ const Home = ({ skillsRef, projectsRef }) => {
             <form className="flex items-center">
               <input
                 type="text"
+                value={subject1}
+                onChange={(e) => setSubject1(e.target.value)}
                 className="py-3 px-2 w-64 rounded-l-lg outline-violet-600"
                 placeholder="Email subject"
               />
-              <button className="bg-violet-600 hover:bg-violet-500 transition duration-300 rounded-r-lg font-semibold text-text_color py-3 px-6">
+              <a
+                href={`mailto:${email}?subject=${
+                  encodeURIComponent(subject1) || ""
+                }&body=${encodeURIComponent(body) || ""}`}
+                className="bg-violet-600 hover:bg-violet-500 transition duration-300 rounded-r-lg font-semibold text-text_color py-3 px-6"
+              >
                 Send me an email
-              </button>
+              </a>
+              {/* <button className="bg-violet-600 hover:bg-violet-500 transition duration-300 rounded-r-lg font-semibold text-text_color py-3 px-6">
+                Send me an email
+              </button> */}
             </form>
 
             <a
@@ -57,12 +72,18 @@ const Home = ({ skillsRef, projectsRef }) => {
             <form className=" md:hidden w-full items-center">
               <input
                 type="text"
+                onChange={(e) => setSubject2(e.target.value)}
                 className="py-3 px-2 w-full rounded outline-violet-600 mb-4"
-                placeholder="Email Address"
+                placeholder="Email subject"
               />
-              <button className="bg-violet-600 w-full hover:bg-violet-500 transition duration-300 rounded font-semibold text-text_color py-3 px-6">
+              <a
+                href={`mailto:${email}?subject=${
+                  encodeURIComponent(subject2) || ""
+                }&body=${encodeURIComponent(body) || ""}`}
+                className="bg-violet-600 hover:bg-violet-500 transition duration-300 rounded-r-lg font-semibold text-text_color py-3 px-6"
+              >
                 Send me an email
-              </button>
+              </a>
             </form>
 
             <div className="w-full h-[0.007rem] bg-neutral-700"></div>
@@ -80,7 +101,10 @@ const Home = ({ skillsRef, projectsRef }) => {
 
       {/* SKILLS SECTION */}
 
-      <section className=" w-full min-h-[60%] flex items-center" ref={skillsRef}>
+      <section
+        className=" w-full min-h-[60%] flex items-center"
+        ref={skillsRef}
+      >
         <div className="w-full">
           <div className="flex items-center gap-2 mb-4 mt-44 md:justify-center">
             <h2 className="text-text_color font-semibold text-xl md:text-4xl font-mono">
@@ -93,19 +117,21 @@ const Home = ({ skillsRef, projectsRef }) => {
 
       {/* PROJECTS SECTION */}
 
-      <section className=" w-full min-h-[60vh] flex items-center" ref={projectsRef}>
+      <section
+        className=" w-full min-h-[60vh] flex items-center"
+        ref={projectsRef}
+      >
         <div>
           <div className="flex items-center gap-2 mb-4 mt-44 md:justify-center">
             <h2 className="text-text_color font-semibold text-xl md:text-4xl font-mono">
               Projects
             </h2>
-
           </div>
           <div className="flex md:justify-center">
             <p className="text-base md:text-xl text-text_transparent md:max-w-[80%] md:text-center mb-8">
               I have gained experience creating all sorts of websites; from
               single page websites to fullstack applications. Check out some of
-              my projects below to see what I have been to up to. 
+              my projects below to see what I have been to up to.
             </p>
           </div>
 
