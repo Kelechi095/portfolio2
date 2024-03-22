@@ -13,11 +13,11 @@ const Project = ({
 }) => {
   return (
     <>
-      <div className="my-2 text-center"></div>
+      <div className="my-2 text-center mb-36"></div>
       <img
         src={src}
         alt="Booktekka image"
-        className="rounded w-full md:max-w-[70%] mx-auto opacity-90"
+        className="rounded w-full md:max-w-[70%] mx-auto"
       />
       <div className="md:max-w-[70%] mx-auto mt-4">
         <h2 className="text-text_color font-semibold text-base md:text-2xl">
