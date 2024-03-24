@@ -136,7 +136,7 @@ const Home = ({ skillsRef, projectsRef }) => {
 
           <Project
             title="BookTekka"
-            tech="Next.js, TypeScript, Tailwind CSS, MongoDB, Prisma, Zustand, React hook form"
+            tech="TypeScript, Next.js Tailwind CSS, MongoDB, Prisma, Zustand, React hook form"
             description1="Booktekka is a web application I created to allow book readers to
             recommend books to other readers, keep track of the books in their
             library and update the reading progress of the books they are currently
@@ -150,7 +150,7 @@ const Home = ({ skillsRef, projectsRef }) => {
 
           <Project
             title="KelQuiz"
-            tech="React, Typescript, Redux tool kit, React Query, Tailwind, Open Trivia Api"
+            tech="Typescript, React.js, Redux tool kit, React Query, Tailwind, Open Trivia Api"
             description1="KelQuiz is a frontend trivia game I built. It has 16 different categories of questions to choose from; each having ten different questions, as well as a countdown timer that increases the intensity of the game"
             description2="I used React query for server side state management and Redux tool kit for client side state management. The trivia data was fetched from the Open  trivia api"
             src={KelQuiz}
@@ -160,7 +160,7 @@ const Home = ({ skillsRef, projectsRef }) => {
 
           <Project
             title="Kelstores"
-            tech="Next.js, TypeScript, Tailwind CSS, MongoDB, Prisma, Zustand, React Context Api"
+            tech="TypeScript, Next.js Tailwind CSS, MongoDB, Prisma, React Context Api"
             description1="Kelstores is an eccommerce application with user authentication, user authorization and an admin dashboard for managing products. "
             description2="I included rating and review functionality to improve user and customer experience. Customers can also keep track of the status of the orders"
             src={Kelstores}
