@@ -13,7 +13,7 @@ const Project = ({
 }) => {
   return (
     <>
-      <div className="my-2 text-center mb-36"></div>
+      <div className="my-2 text-center mb-24"></div>
       <img
         src={src}
         alt="Booktekka image"
