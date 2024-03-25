@@ -151,7 +151,7 @@ const Home = ({ skillsRef, projectsRef }) => {
           <Project
             title="KelQuiz"
             tech="Typescript, React.js, Redux tool kit, React Query, Tailwind, Open Trivia Api"
-            description1="KelQuiz is a frontend trivia game I built. It has 16 different categories of questions to choose from; each having ten different questions, as well as a countdown timer that increases the intensity of the game"
+            description1="KelQuiz is a frontend trivia game I built. It has 16 different categories of questions to choose from; each having ten different questions as well as a countdown timer that increases the intensity of the game"
             description2="I used React query for server side state management and Redux tool kit for client side state management. The trivia data was fetched from the Open  trivia api"
             src={KelQuiz}
             siteLink="https://kelquiz.netlify.app"
@@ -161,8 +161,8 @@ const Home = ({ skillsRef, projectsRef }) => {
           <Project
             title="Kelstores"
             tech="TypeScript, Next.js Tailwind CSS, MongoDB, Prisma, React Context Api"
-            description1="Kelstores is an eccommerce application with user authentication, user authorization and an admin dashboard for managing products. "
-            description2="I included rating and review functionality to improve user and customer experience. Customers can also keep track of the status of the orders"
+            description1="Kelstores is an e-commerce application with user authentication, user authorization, cart feature and an admin dashboard for managing products. "
+            description2="I included rating and review functionality to improve user and customer experience. Users can also keep track of the status of their orders"
             src={Kelstores}
             siteLink="https://kelstores.vercel.app"
             gitLink="https://github.com/Kelechi095/Kelstores"
