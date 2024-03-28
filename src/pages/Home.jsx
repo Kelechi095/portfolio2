@@ -148,15 +148,6 @@ const Home = ({ skillsRef, projectsRef }) => {
             gitLink="https://github.com/Kelechi095/BookTekka-Nextjs"
           />
 
-          <Project
-            title="KelQuiz"
-            tech="Typescript, React.js, Redux tool kit, React Query, Tailwind, Open Trivia Api"
-            description1="KelQuiz is a frontend trivia game I built. It has 16 different categories of questions to choose from; each having ten different questions as well as a countdown timer that increases the intensity of the game"
-            description2="I used React query for server side state management and Redux tool kit for client side state management. The trivia data was fetched from the Open  trivia api"
-            src={KelQuiz}
-            siteLink="https://kelquiz.netlify.app"
-            gitLink="https://github.com/Kelechi095/KelQuiz"
-          />
 
           <Project
             title="Kelstores"
@@ -166,6 +157,16 @@ const Home = ({ skillsRef, projectsRef }) => {
             src={Kelstores}
             siteLink="https://kelstores.vercel.app"
             gitLink="https://github.com/Kelechi095/Kelstores"
+          />
+          
+          <Project
+            title="KelQuiz"
+            tech="Typescript, React.js, Redux tool kit, React Query, Tailwind, Open Trivia Api"
+            description1="KelQuiz is a frontend trivia game I built. It has 16 different categories of questions to choose from; each having ten different questions as well as a countdown timer that increases the intensity of the game"
+            description2="I used React query for server side state management and Redux tool kit for client side state management. The trivia data was fetched from the Open  trivia api"
+            src={KelQuiz}
+            siteLink="https://kelquiz.netlify.app"
+            gitLink="https://github.com/Kelechi095/KelQuiz"
           />
         </div>
       </section>
